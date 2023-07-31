@@ -1,0 +1,548 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 30
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+nav{
+    width: 46%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:4%;
+    left:28%;
+    padding-right: 30px;
+    border-radius: 50px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+
+    
+    
+
+
+}
+
+
+  
+ .elements .item {
+    display: inline-flex;
+    margin-left: 39px;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+
+
+}
+.elements .item a{
+    transition: all 0.5s linear;
+    color: #ffffff;
+}
+   
+.elements .item a:hover{
+    zoom: 104%;
+    transition: all 1s ease;
+    color:#888ac8;
+    text-shadow: 1px 1px 10px #6d6d6d;
+   
+
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*end nav bar css*/
+.nav {
+    height: 40vh;
+    width: 100vw;
+    background-color:#888ac8;
+    display: flex;
+    justify-content: space-around;
+}
+.nav #current{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 3.5em;
+    line-height: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #eaeaee;
+    padding-top: 50px;
+}
+.nav img{
+    z-index: 2;
+    position: relative;
+    top: 20%;
+
+}
+.nav .redirect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.parent{
+    z-index: 1;
+    height: 70vh;
+    margin-left:5%;
+    margin-top: -4%;
+    position: relative;
+    width: 90vw;
+    background-color: rgb(223, 224, 243);
+    border-radius: 20px;
+    
+}
+
+
+.carassel{
+    height:490px;
+    width:100%;
+    top: 15%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 20px;
+    
+}
+.slider{
+    height: auto;
+    display: flex;
+    width: 400%;
+
+}
+.slider section{
+   flex-basis: 100%;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   color: rgb(127, 118, 148);
+   padding-left: 20px;
+   padding-right: 20px;
+
+
+ 
+   
+}
+.slider section img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 20px;
+
+}
+
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(-50%);
+  
+}
+.arrow.left{
+    left:35px;
+}
+
+.arrow.right{
+    right: 18px;
+}
+.controls ul{
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform:translate(-50%);
+    list-style: none;
+    display: flex;
+    padding:0 ;
+    margin:0;
+}
+.controls ul li.selected{
+    background-color: transparent;
+   }
+.controls ul li{
+width: 15px;
+height: 15px;
+border:2px solid #dfdada;
+cursor: pointer;
+border-radius: 50px;
+margin: 10px;
+background-color: #fff9f9;
+
+}
+
+.spots{
+    margin-top: 20px;
+}
+.spots h1{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 2em;
+    line-height: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #a8a8d8;
+    text-align: center;
+    padding-top: 50px;
+}
+.wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 60vh;
+margin:20px auto;
+
+}
+.container{
+width: 1300px;
+position: relative;
+padding: 20px;
+height: 70%;
+}
+.carsel {
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slide {
+    display: inline-block; 
+    width: 330px; 
+    margin-right: 10px; 
+    text-align: center;
+    height: 500px; 
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px; 
+    height: 100%; 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carsel img:hover {
+    opacity: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    right: 8%;
+    color: rgb(216, 216, 216);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 35px;
+    opacity: 0;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+}
+ 
+
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(27, 27, 27), rgba(255, 255, 255, 0));
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    border-radius: 10px;
+    
+}
+
+.image-container:hover .gradient{
+    opacity: 1;
+}  
+
+.image-container:hover .title{
+    color: #ffffff;
+    opacity: 100;
+  }
+
+.container span{
+ text-align: center;
+ background-color: beige;
+ height: 40px;
+ width: 40px;
+ cursor: pointer;
+ line-height: 40px;
+ border-radius: 50%;
+ font-size: 1.2rem;
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+
+
+}
+.container span:first-child
+{
+left: -10px;
+}
+.container span:last-child
+{
+right: -23px;
+}
+.carsel img:first-child{
+margin-left: 0px;
+}
+
+/*end caroussel part*/
+/*news part*/
+
+.news{
+    height: 67vh;
+    width: 90vw;
+    background-color: #a8a8d8;
+    margin: 30px auto;
+    border-radius: 20px;
+
+
+}
+.news h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #f1f1f1;
+}
+.grid
+{
+    border-radius: 20px;
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: repeat(2,1fr);
+
+    grid-template-rows: repeat(2,1fr);
+    padding-top: 2%;
+
+
+}
+.news .grid .box{
+    width: 100%;
+    height:100%;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.news .grid .box img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    box-shadow: 0 4px 8px 5px rgba(19, 18, 18, 0.2);
+
+}
+
+.news .grid .box .announce{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.news .grid .box .announce h2{ 
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding-bottom: 10px;
+
+}
+h4{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    color: #e7e2e2;
+}
+
+.news .grid .box img{
+    width: 300px;
+    height:200px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+
+}
+.news .grid .box .announce {
+    
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    word-wrap: break-word;
+
+}
+
+
+
+
+
+.food-layout{
+    height: auto;
+    width: 90vw;
+    background-color: rgb(174, 223, 77);
+    border-radius: 20px;
+    margin: 30px auto;
+    
+}
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     padding: 30px;
+    columns: 3;
+    column-gap: 10px;
+    flex-wrap: nowrap;
+
+}
+.food .food-pic h2{
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left:28%;
+    word-wrap: break-word;
+    opacity: 0;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 1.5em;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding-bottom: 5%;
+   
+
+    
+}
+.food-pic:hover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.815), transparent);
+    pointer-events: none; 
+    transform: translateY(67%);
+  }
+.food-pic:hover h2 {
+opacity: 1;
+color: rgb(255, 255, 255);
+    text-shadow:2px 2px 5px rgb(27, 21, 21);
+}
+.food-pic{
+    position: relative;
+    overflow: hidden;
+
+}
+.food-pic img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.food-pic img{
+height: 500px;
+object-fit: cover;
+width: 320px;
+transition: all  1s;
+
+ 
+}
+
+
+
+.food-layout h1{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    color: rgb(254, 255, 253);
+    font-size: 2em;
+    
+    line-height: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    text-align: center;
+
+
+}
+
+
+
+
+.fourth{
+    padding-top: 2%;
+    height: 35vh;
+    width: 100vw;
+    background: linear-gradient(to top, #b38ddf, transparent);
+    display: flex;
+}
+
+.end{
+display: flex;
+width: 70%;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.end h1{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    padding-bottom: 10px;
+   
+}
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+
+
+
+    
+}
+
+.logo{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100px;
+
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    display: block;
+   
+   margin-right: 20px;
+
+   
+}

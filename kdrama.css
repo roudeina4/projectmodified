@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:5%;
+    left:37%;
+    padding-right: 30px;
+    border-radius: 50px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    z-index: 1;
+    
+  
+  
+  }
+  
+  
+  
+  .elements .item {
+    display: inline-flex;
+    margin-left: 39px;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+  
+  
+  }
+  .elements .item a{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    text-shadow:2px 2px 5px rgb(27, 21, 21);
+
+  }
+   
+  .elements .item a:hover{
+    zoom: 104%;
+    transition: all 1s ease;
+    color:#888ac8;
+    text-shadow: 1px 1px 10px #6d6d6d;
+
+   
+  
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  
+  
+
+
+
+.first{
+    position: relative;
+}
+
+.container{
+    height: 99vh;
+    width: 100vw;
+    box-shadow: 3px 3px 20px gainsboro;
+  overflow: hidden;
+    background-color: wheat;
+
+}
+
+.img-container img{
+    width:100%;
+    height:100%;
+}
+ .title{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left:5%;
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px 5px rgb(27, 21, 21);
+   
+}
+.title .sous-title{
+    color: rgb(233, 227, 227);
+    height: 50px;
+    width:360px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+ 
+}
+.container .title h1{
+    font-size: 100px;
+}
+
+
+span::after{
+    content: ".";
+    font-size: 40px;
+    padding-left: 1%;
+    color: rgb(78, 78, 83);
+
+
+}
+
+
+button{
+    margin-top: 20px;
+    width:250px;
+    height: 65px;
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 50%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 6px 10px rgb(37, 36, 36);
+
+}
+button::before{
+    content: '▶';
+    padding-right: 5%;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    animation-name: target;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transition: all infinite  ease;
+}
+
+@keyframes target{
+  0%{ 
+   background-color: whitesmoke;
+  }
+ 
+  50%{
+    background-color: rgba(182, 182, 182, 0.781);
+
+  }
+     100%{
+    background-color: rgba(71, 71, 71, 0.212);
+   }
+}
+   
+ .img-container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.815), transparent);
+    pointer-events: none; 
+    transform: translateY(67%);
+  }
+
+
+
+.second{
+   
+    height:75vh;
+    width: 100vw;
+    margin-top: 1%;
+    
+    
+}
+.second h1{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 3.5em;
+    line-height: 5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #888ac8;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-left: 5%;
+    
+  
+}
+.carsel{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+   
+}
+.image-container:hover{
+    box-shadow: 0 8px 16px 6px rgba(41, 40, 40, 0.37);
+
+}
+  .image-container img:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+  }
+
+
+     
+    
+.image-container {
+      position: relative;
+     margin-bottom: 10px; 
+     display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 5px rgba(19, 18, 18, 0.301);
+
+        }
+        
+        .carsel img {
+            display: block;
+             width: 290px;
+              height: 400px;
+            object-fit: cover;
+            transition: all  1s;
+            
+   }
+        
+   
+
+
+
+
+
+.third{
+height: 100vh;
+width: 100vw;
+padding: 30px;
+}
+.third #main-title{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 3.5em;
+    line-height: 5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #888ac8;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-left: 5%;
+    
+}
+.content{
+    width: 80vw;
+    margin: 30px auto;
+   
+    
+}
+.card{
+    break-inside: avoid;
+    background-color:#b5b7ee;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 1450px;
+    justify-content: center;
+    
+    
+  
+    
+    
+}
+.picture img{
+    width:100%; 
+    height: 100%; 
+    max-width: 100%; 
+    object-fit: cover;
+
+}
+.tag h3{
+    padding-bottom: 10%;
+    color: #d1cbcb;
+
+}
+.tag ul{
+    list-style: none;
+    padding-left: 6%;
+}
+.tag h1{
+  font-size: 2em;
+  line-height: 5px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #fafafa;
+  padding-bottom: 10%;
+ 
+  color: rgb(255, 255, 255);
+  text-shadow:2px 2px 5px rgb(27, 21, 21);
+ 
+}
+.tag{
+    z-index: 1;
+    position: absolute;
+    top: 80%;
+    left:5%;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+
+   
+}
+.picture:hover .overlay3{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.918), transparent);
+    pointer-events: none; 
+    transform: translateY(67%);
+}
+.picture:hover .tag{
+    opacity: 1;
+   transition: ease-in 1s;
+}
+
+.picture {
+    position: relative;
+    flex: 1;
+    transition: .3s;
+    width: 100px;
+    height:700px ;
+    object-fit: cover;
+    background-color: rgb(255, 255, 255);
+}
+.picture:hover{
+    flex: 3;
+
+}
+
+
+.fourth{
+height: 90vh;
+width: 100vw;
+margin-top: 30px;
+
+}
+.fourth #main-title{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    font-size: 3.5em;
+    line-height: 5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #888ac8;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-left: 5%;
+    
+}
+.news{
+height:100% ;
+width:100% ;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+padding: 20px;
+}
+.left-news{
+ height:100%;
+ width: 50%;
+}
+
+.right-news{
+   height: 700px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    
+   }
+   .right-news img{
+    display: block;
+    width: 100%;
+     height: 100%;
+   object-fit: cover;
+   }
+   .right-news .pic{
+    width: 90%;
+     height: 227px;
+
+   }
+.right-news .one{
+    height:calc(100%/3);
+     width: 100%;
+     
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+
+.right-news .one .announce{
+    display: flex;
+    align-items: center;
+}
+.right-news .one .announce h1{
+
+font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+font-size: 1.2em;
+font-weight: 700;
+letter-spacing: 1px;
+
+}
+
+
+/*footer*/
+.fifth{
+    margin-top: 10%;
+    height: 35vh;
+    width: 100vw;
+    background: linear-gradient(to top, #b38ddf, transparent);
+    display: flex;
+}
+
+.end{
+display: flex;
+width: 70%;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.end h1{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+    padding-bottom: 10px;
+   
+}
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;
+
+
+
+    
+}
+
+.logo{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100px;
+
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    display: block;
+   
+   margin-right: 20px;
+
+   
+}
